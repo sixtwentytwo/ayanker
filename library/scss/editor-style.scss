@@ -16,20 +16,8 @@ http://codex.wordpress.org/Editor_Style
 here http://codex.wordpress.org/Function_Reference/add_editor_style */
 body#tinymce.wp-editor {
 
-	// normalize: http://necolas.github.io/normalize.css/
-	@import "partials/normalize";
+	@import "style";
 
-	// Sass variables
-	@import "partials/variables";
-
-	// typography
-	@import "partials/typography";
-
-	// Sass functions
-	@import "partials/functions";
-
-	// import mixins
-	@import "partials/mixins";
 
 	width: 731px;
 	font-family: $lato;
@@ -112,6 +100,7 @@ body#tinymce.wp-editor {
 			width: 100%;
 			border: 1px solid $gray;
 			margin-bottom: 1.5em;
+			tr,td{height: unset !important;}
 
 			caption {
 				margin: 0 0 7px;

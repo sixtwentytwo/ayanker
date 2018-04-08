@@ -588,6 +588,7 @@ margin: 0 !important;
 .resume{
 table, td, tr {
 border:0 !important;
+height: unset !important;
 }
 }
 .resume table tr td:first-child{
@@ -603,7 +604,13 @@ tr td:last-child {
 .resume td a{
 color: black;
 }
+td:empty,  {
+    display: none;
+}
 
+.resume table h1 {
+    margin: 0;
+}
 @media
 only screen and (max-width: 767px){
 /* Force table to not be like tables anymore */

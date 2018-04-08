@@ -16,6 +16,28 @@ here http://codex.wordpress.org/Function_Reference/add_editor_style */
 @import url("https://fonts.googleapis.com/css?family=Anton|Cabin|Montserrat");
 /* line 17, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/editor-style.scss */
 body#tinymce.wp-editor {
+  /*! Made with Bones: http://themble.com/bones :) */
+  /******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Main Stylesheet
+
+Here's where the magic happens. Here, you'll see we are calling in
+the separate media queries. The base mobile goes outside any query
+and is called at the beginning, after that we call the rest
+of the styles inside media queries.
+
+Helpful articles on Sass file organization:
+http://thesassway.com/advanced/modular-css-naming-conventions
+
+******************************************************************/
+  /*********************
+IMPORTING PARTIALS
+These files are needed at the beginning so that we establish all
+our mixins, functions, and variables that we'll be using across
+the whole project.
+*********************/
   /* normalize.css 2012-07-07T09:50 UTC - http://github.com/necolas/normalize.css */
   /* ==========================================================================
    HTML5 display definitions
@@ -348,6 +370,295 @@ BOX SIZING
   /* @include box-sizing(border-box); */
   /* NOTE: value of "padding-box" is only supported in Gecko. So
 probably best not to use it. I mean, were you going to anyway? */
+  /******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Grid Stylesheet
+
+I've seperated the grid so you can swap it out easily. It's
+called at the top the style.scss stylesheet.
+
+There are a ton of grid solutions out there. You should definitely
+experiment with your own. Here are some recommendations:
+
+http://gridsetapp.com - Love this site. Responsive Grids made easy.
+http://susy.oddbird.net/ - Grids using Compass. Very elegant.
+http://gridpak.com/ - Create your own responsive grid.
+https://github.com/dope/lemonade - Neat lightweight grid.
+
+
+The grid below is a custom built thingy I modeled a bit after
+Gridset. It's VERY basic and probably shouldn't be used on
+your client projects. The idea is you learn how to roll your
+own grids. It's better in the long run and allows you full control
+over your project's layout.
+
+******************************************************************/
+  /*
+Mobile Grid Styles
+These are the widths for the mobile grid.
+There are four types, but you can add or customize
+them however you see fit.
+*/
+  /* Portrait tablet to landscape */
+  /* Landscape to small desktop */
+  /*********************
+IMPORTING MODULES
+Modules are reusable blocks or elements we use throughout the project.
+We can break them up as much as we want or just keep them all in one.
+I mean, you can do whatever you want. The world is your oyster. Unless
+you hate oysters, then the world is your peanut butter & jelly sandwich.
+*********************/
+  /******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Alert Styles
+
+If you want to use these alerts in your design, you can. If not,
+you can just remove this stylesheet.
+
+******************************************************************/
+  /******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Button Styles
+
+Buttons are a pretty important part of your site's style, so it's
+important to have a consistent baseline for them. Use this stylesheet
+to create all kinds of buttons.
+
+Helpful Links:
+http://galp.in/blog/2011/08/02/the-ui-guide-part-1-buttons/
+
+******************************************************************/
+  /*********************
+BUTTON DEFAULTS
+We're gonna use a placeholder selector here
+so we can use common styles. We then use this
+to load up the defaults in all our buttons.
+
+Here's a quick video to show how it works:
+http://www.youtube.com/watch?v=hwdVpKiJzac
+
+*********************/
+  /*
+An example button.
+You can use this example if you want. Just replace all the variables
+and it will create a button dependant on those variables.
+*/
+  /******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Form Styles
+
+We put all the form and button styles in here to setup a consistent
+look. If we need to customize them, we can do this in the main
+stylesheets and just override them. Easy Peasy.
+
+You're gonna see a few data-uri thingies down there. If you're not
+sure what they are, check this link out:
+http://css-tricks.com/data-uris/
+If you want to create your own, use this helpful link:
+http://websemantics.co.uk/online_tools/image_to_data_uri_convertor/
+
+******************************************************************/
+  /*********************
+INPUTS
+*********************/
+  /*********************
+BASE (MOBILE) SIZE
+This are the mobile styles. It's what people see on their phones. If
+you set a great foundation, you won't need to add too many styles in
+the other stylesheets. Remember, keep it light: Speed is Important.
+*********************/
+  /******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Base Mobile Stylesheet
+
+Be light and don't over style since everything here will be
+loaded by mobile devices. You want to keep it as minimal as
+possible. This is called at the top of the main stylsheet
+and will be used across all viewports.
+
+******************************************************************/
+  /*********************
+GENERAL STYLES
+*********************/
+  /********************
+WORDPRESS BODY CLASSES
+style a page via class
+********************/
+  /* for sites that are read right to left (i.e. hebrew) */
+  /* home page */
+  /* blog template page */
+  /* archive page */
+  /* date archive page */
+  /* replace the number to the corresponding page number */
+  /* search page */
+  /* search result page */
+  /* no results search page */
+  /* individual paged search (i.e. body.search-paged-3) */
+  /* 404 page */
+  /* single post page */
+  /* individual post page by id (i.e. body.postid-73) */
+  /* individual paged single (i.e. body.single-paged-3) */
+  /* attatchment page */
+  /* individual attatchment page (i.e. body.attachmentid-763) */
+  /* style mime type pages */
+  /* author page */
+  /* user nicename (i.e. body.author-samueladams) */
+  /* paged author archives (i.e. body.author-paged-4) for page 4 */
+  /* category page */
+  /* individual category page (i.e. body.category-6) */
+  /* replace the number to the corresponding page number */
+  /* tag page */
+  /* individual tag page (i.e. body.tag-news) */
+  /* replace the number to the corresponding page number */
+  /* custom page template page */
+  /* individual page template (i.e. body.page-template-contact-php */
+  /* replace the number to the corresponding page number */
+  /* parent page template */
+  /* child page template */
+  /* replace the number to the corresponding page number */
+  /* if user is logged in */
+  /* paged items like search results or archives */
+  /* individual paged (i.e. body.paged-3) */
+  /*********************
+LAYOUT & GRID STYLES
+*********************/
+  /*********************
+LINK STYLES
+*********************/
+  /******************************************************************
+H1, H2, H3, H4, H5 STYLES
+******************************************************************/
+  /*********************
+HEADER STYLES
+*********************/
+  /*********************
+NAVIGATION STYLES
+*********************/
+  /*
+all navs have a .nav class applied via
+the wp_menu function; this is so we can
+easily write one group of styles for
+the navs on the site so our css is cleaner
+and more scalable.
+*/
+  /* end .nav */
+  /*********************
+POSTS & CONTENT STYLES
+*********************/
+  /* end .hentry */
+  /* want to style individual post classes? Booya! */
+  /* post by id (i.e. post-3) */
+  /* general post style */
+  /* general article on a page style */
+  /* general style on an attatchment */
+  /* sticky post style */
+  /* hentry class */
+  /* style by category (i.e. category-videos) */
+  /* style by tag (i.e. tag-news) */
+  /* post meta */
+  /* entry content */
+  /* end .entry-content */
+  /* end .wp-caption */
+  /* image gallery styles */
+  /* end .gallery */
+  /* gallery caption styles */
+  /*********************
+RESUME
+*********************/
+  /*********************
+END RESUME
+*********************/
+  /******************************************************************
+PAGE NAVI STYLES
+******************************************************************/
+  /* end .bones_page_navi */
+  /* fallback previous & next links */
+  /* end .wp-prev-next */
+  /******************************************************************
+COMMENT STYLES
+******************************************************************/
+  /* h3 comment title */
+  /* comment meta */
+  /* comment content */
+  /* end .commentlist .comment_content */
+  /* comment reply link */
+  /* end .commentlist .comment-reply-link */
+  /* edit comment link */
+  /******************************************************************
+COMMENT FORM STYLES
+******************************************************************/
+  /* comment submit button */
+  /* comment form title */
+  /* cancel comment reply link */
+  /* logged in comments */
+  /* allowed tags */
+  /* no comments */
+  /*********************
+SIDEBARS & ASIDES
+*********************/
+  /*********************
+FOOTER STYLES
+*********************/
+  /*
+	if you checked out the link above:
+	http://www.alistapart.com/articles/organizing-mobile/
+	you'll want to style the footer nav
+	a bit more in-depth. Remember to keep
+	it simple because you'll have to
+	override these styles for the desktop
+	view.
+	*/
+  /* end .footer-links */
+  /****
+VIDEOS
+***/
+  /***
+END VIDEOS
+***/
+  /*********************
+LARGER MOBILE DEVICES
+This is for devices like the Galaxy Note or something that's
+larger than an iPhone but smaller than a tablet. Let's call them
+tweeners.
+*********************/
+  /*********************
+TABLET & SMALLER LAPTOPS
+This is the average viewing window. So Desktops, Laptops, and
+in general anyone not viewing on a mobile device. Here's where
+you can add resource intensive styles.
+*********************/
+  /*********************
+DESKTOP
+This is the average viewing window. So Desktops, Laptops, and
+in general anyone not viewing on a mobile device. Here's where
+you can add resource intensive styles.
+*********************/
+  /*********************
+LARGE VIEWING SIZE
+This is for the larger monitors and possibly full screen viewers.
+*********************/
+  /*********************
+RETINA (2x RESOLUTION DEVICES)
+This applies to the retina iPhone (4s) and iPad (2,3) along with
+other displays with a 2x resolution. You can also create a media
+query for retina AND a certain size if you want. Go Nuts.
+*********************/
+  /*********************
+PRINT STYLESHEET
+Feel free to customize this. Remember to add things that won't make
+sense to print at the bottom. Things like nav, ads, and forms should
+be set to display none.
+*********************/
   width: 731px;
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 100%;
@@ -696,18 +1007,18 @@ body#tinymce.wp-editor .ir {
 }
 
 /* line 487, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/partials/_normalize.scss */
-body#tinymce.wp-editor .clearfix, body#tinymce.wp-editor .cf {
+body#tinymce.wp-editor .clearfix, body#tinymce.wp-editor .cf, body#tinymce.wp-editor .comment-respond {
   zoom: 1;
 }
 
 /* line 489, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/partials/_normalize.scss */
-body#tinymce.wp-editor .clearfix:before, body#tinymce.wp-editor .clearfix:after, body#tinymce.wp-editor .cf:before, body#tinymce.wp-editor .cf:after {
+body#tinymce.wp-editor .clearfix:before, body#tinymce.wp-editor .clearfix:after, body#tinymce.wp-editor .cf:before, body#tinymce.wp-editor .comment-respond:before, body#tinymce.wp-editor .cf:after, body#tinymce.wp-editor .comment-respond:after {
   content: "";
   display: table;
 }
 
 /* line 490, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/partials/_normalize.scss */
-body#tinymce.wp-editor .clearfix:after, body#tinymce.wp-editor .cf:after {
+body#tinymce.wp-editor .clearfix:after, body#tinymce.wp-editor .cf:after, body#tinymce.wp-editor .comment-respond:after {
   clear: both;
 }
 
@@ -734,59 +1045,719 @@ body#tinymce.wp-editor p {
   font-feature-settings: "liga", "dlig";
 }
 
-/* line 47, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/editor-style.scss */
+/* line 35, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/partials/_grid.scss */
+body#tinymce.wp-editor .last-col {
+  float: right;
+  padding-right: 0 !important;
+}
+
+@media (max-width: 767px) {
+  /* line 49, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/partials/_grid.scss */
+  body#tinymce.wp-editor .m-all {
+    float: left;
+    padding-right: 0.75em;
+    width: 100%;
+    padding-right: 0;
+  }
+  /* line 55, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/partials/_grid.scss */
+  body#tinymce.wp-editor .m-1of2 {
+    float: left;
+    padding-right: 0.75em;
+    width: 50%;
+  }
+  /* line 60, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/partials/_grid.scss */
+  body#tinymce.wp-editor .m-1of3 {
+    float: left;
+    padding-right: 0.75em;
+    width: 33.33%;
+  }
+  /* line 65, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/partials/_grid.scss */
+  body#tinymce.wp-editor .m-2of3 {
+    float: left;
+    padding-right: 0.75em;
+    width: 66.66%;
+  }
+  /* line 70, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/partials/_grid.scss */
+  body#tinymce.wp-editor .m-1of4 {
+    float: left;
+    padding-right: 0.75em;
+    width: 25%;
+  }
+  /* line 75, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/partials/_grid.scss */
+  body#tinymce.wp-editor .m-3of4 {
+    float: left;
+    padding-right: 0.75em;
+    width: 75%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1029px) {
+  /* line 86, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/partials/_grid.scss */
+  body#tinymce.wp-editor .t-all {
+    float: left;
+    padding-right: 0.75em;
+    width: 100%;
+    padding-right: 0;
+  }
+  /* line 92, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/partials/_grid.scss */
+  body#tinymce.wp-editor .t-1of2 {
+    float: left;
+    padding-right: 0.75em;
+    width: 50%;
+  }
+  /* line 97, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/partials/_grid.scss */
+  body#tinymce.wp-editor .t-1of3 {
+    float: left;
+    padding-right: 0.75em;
+    width: 33.33%;
+  }
+  /* line 102, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/partials/_grid.scss */
+  body#tinymce.wp-editor .t-2of3 {
+    float: left;
+    padding-right: 0.75em;
+    width: 66.66%;
+  }
+  /* line 107, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/partials/_grid.scss */
+  body#tinymce.wp-editor .t-1of4 {
+    float: left;
+    padding-right: 0.75em;
+    width: 25%;
+  }
+  /* line 112, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/partials/_grid.scss */
+  body#tinymce.wp-editor .t-3of4 {
+    float: left;
+    padding-right: 0.75em;
+    width: 75%;
+  }
+  /* line 117, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/partials/_grid.scss */
+  body#tinymce.wp-editor .t-1of5 {
+    float: left;
+    padding-right: 0.75em;
+    width: 20%;
+  }
+  /* line 122, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/partials/_grid.scss */
+  body#tinymce.wp-editor .t-2of5 {
+    float: left;
+    padding-right: 0.75em;
+    width: 40%;
+  }
+  /* line 127, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/partials/_grid.scss */
+  body#tinymce.wp-editor .t-3of5 {
+    float: left;
+    padding-right: 0.75em;
+    width: 60%;
+  }
+  /* line 132, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/partials/_grid.scss */
+  body#tinymce.wp-editor .t-4of5 {
+    float: left;
+    padding-right: 0.75em;
+    width: 80%;
+  }
+}
+
+@media (min-width: 1030px) {
+  /* line 142, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/partials/_grid.scss */
+  body#tinymce.wp-editor .d-all {
+    float: left;
+    padding-right: 0.75em;
+    width: 100%;
+    padding-right: 0;
+  }
+  /* line 148, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/partials/_grid.scss */
+  body#tinymce.wp-editor .d-1of2 {
+    float: left;
+    padding-right: 0.75em;
+    width: 50%;
+  }
+  /* line 153, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/partials/_grid.scss */
+  body#tinymce.wp-editor .d-1of3 {
+    float: left;
+    padding-right: 0.75em;
+    width: 33.33%;
+  }
+  /* line 158, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/partials/_grid.scss */
+  body#tinymce.wp-editor .d-2of3 {
+    float: left;
+    padding-right: 0.75em;
+    width: 66.66%;
+  }
+  /* line 163, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/partials/_grid.scss */
+  body#tinymce.wp-editor .d-1of4 {
+    float: left;
+    padding-right: 0.75em;
+    width: 25%;
+  }
+  /* line 168, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/partials/_grid.scss */
+  body#tinymce.wp-editor .d-3of4 {
+    float: left;
+    padding-right: 0.75em;
+    width: 75%;
+  }
+  /* line 173, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/partials/_grid.scss */
+  body#tinymce.wp-editor .d-1of5 {
+    float: left;
+    padding-right: 0.75em;
+    width: 20%;
+  }
+  /* line 178, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/partials/_grid.scss */
+  body#tinymce.wp-editor .d-2of5 {
+    float: left;
+    padding-right: 0.75em;
+    width: 40%;
+  }
+  /* line 183, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/partials/_grid.scss */
+  body#tinymce.wp-editor .d-3of5 {
+    float: left;
+    padding-right: 0.75em;
+    width: 60%;
+  }
+  /* line 188, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/partials/_grid.scss */
+  body#tinymce.wp-editor .d-4of5 {
+    float: left;
+    padding-right: 0.75em;
+    width: 80%;
+  }
+  /* line 193, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/partials/_grid.scss */
+  body#tinymce.wp-editor .d-1of6 {
+    float: left;
+    padding-right: 0.75em;
+    width: 16.6666666667%;
+  }
+  /* line 198, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/partials/_grid.scss */
+  body#tinymce.wp-editor .d-1of7 {
+    float: left;
+    padding-right: 0.75em;
+    width: 14.2857142857%;
+  }
+  /* line 203, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/partials/_grid.scss */
+  body#tinymce.wp-editor .d-2of7 {
+    float: left;
+    padding-right: 0.75em;
+    width: 28.5714286%;
+  }
+  /* line 208, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/partials/_grid.scss */
+  body#tinymce.wp-editor .d-3of7 {
+    float: left;
+    padding-right: 0.75em;
+    width: 42.8571429%;
+  }
+  /* line 213, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/partials/_grid.scss */
+  body#tinymce.wp-editor .d-4of7 {
+    float: left;
+    padding-right: 0.75em;
+    width: 57.1428572%;
+  }
+  /* line 218, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/partials/_grid.scss */
+  body#tinymce.wp-editor .d-5of7 {
+    float: left;
+    padding-right: 0.75em;
+    width: 71.4285715%;
+  }
+  /* line 223, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/partials/_grid.scss */
+  body#tinymce.wp-editor .d-6of7 {
+    float: left;
+    padding-right: 0.75em;
+    width: 85.7142857%;
+  }
+  /* line 228, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/partials/_grid.scss */
+  body#tinymce.wp-editor .d-1of8 {
+    float: left;
+    padding-right: 0.75em;
+    width: 12.5%;
+  }
+  /* line 233, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/partials/_grid.scss */
+  body#tinymce.wp-editor .d-1of9 {
+    float: left;
+    padding-right: 0.75em;
+    width: 11.1111111111%;
+  }
+  /* line 238, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/partials/_grid.scss */
+  body#tinymce.wp-editor .d-1of10 {
+    float: left;
+    padding-right: 0.75em;
+    width: 10%;
+  }
+  /* line 243, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/partials/_grid.scss */
+  body#tinymce.wp-editor .d-1of11 {
+    float: left;
+    padding-right: 0.75em;
+    width: 9.09090909091%;
+  }
+  /* line 248, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/partials/_grid.scss */
+  body#tinymce.wp-editor .d-1of12 {
+    float: left;
+    padding-right: 0.75em;
+    width: 8.33%;
+  }
+}
+
+/* line 15, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/modules/_alerts.scss */
+body#tinymce.wp-editor .alert-help, body#tinymce.wp-editor .alert-info, body#tinymce.wp-editor .alert-error, body#tinymce.wp-editor .alert-success {
+  margin: 10px;
+  padding: 5px 18px;
+  border: 1px solid;
+}
+
+/* line 21, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/modules/_alerts.scss */
+body#tinymce.wp-editor .alert-help {
+  border-color: #e8dc59;
+  background: #ebe16f;
+}
+
+/* line 27, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/modules/_alerts.scss */
+body#tinymce.wp-editor .alert-info {
+  border-color: #bfe4f4;
+  background: #d5edf8;
+}
+
+/* line 33, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/modules/_alerts.scss */
+body#tinymce.wp-editor .alert-error {
+  border-color: #f8cdce;
+  background: #fbe3e4;
+}
+
+/* line 39, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/modules/_alerts.scss */
+body#tinymce.wp-editor .alert-success {
+  border-color: #deeaae;
+  background: #e6efc2;
+}
+
+/* line 27, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/modules/_buttons.scss */
+body#tinymce.wp-editor .blue-btn, body#tinymce.wp-editor .comment-reply-link, body#tinymce.wp-editor #submit {
+  display: inline-block;
+  position: relative;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.9em;
+  font-size: 34px;
+  line-height: 34px;
+  font-weight: normal;
+  padding: 0 24px;
+  border-radius: 4px;
+  border: 0;
+  cursor: pointer;
+  -webkit-transition: background-color 0.14s ease-in-out;
+  transition: background-color 0.14s ease-in-out;
+}
+
+/* line 44, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/modules/_buttons.scss */
+body#tinymce.wp-editor .blue-btn:hover, body#tinymce.wp-editor .comment-reply-link:hover, body#tinymce.wp-editor #submit:hover, body#tinymce.wp-editor .blue-btn:focus, body#tinymce.wp-editor .comment-reply-link:focus, body#tinymce.wp-editor #submit:focus {
+  color: #fff;
+  text-decoration: none;
+  outline: none;
+}
+
+/* line 51, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/modules/_buttons.scss */
+body#tinymce.wp-editor .blue-btn:active, body#tinymce.wp-editor .comment-reply-link:active, body#tinymce.wp-editor #submit:active {
+  top: 1px;
+}
+
+/* line 62, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/modules/_buttons.scss */
+body#tinymce.wp-editor .blue-btn, body#tinymce.wp-editor .comment-reply-link, body#tinymce.wp-editor #submit {
+  background-color: #2980b9;
+}
+
+/* line 66, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/modules/_buttons.scss */
+body#tinymce.wp-editor .blue-btn:hover, body#tinymce.wp-editor .comment-reply-link:hover, body#tinymce.wp-editor #submit:hover, body#tinymce.wp-editor .blue-btn:focus, body#tinymce.wp-editor .comment-reply-link:focus, body#tinymce.wp-editor #submit:focus {
+  background-color: #2574a8;
+}
+
+/* line 71, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/modules/_buttons.scss */
+body#tinymce.wp-editor .blue-btn:active, body#tinymce.wp-editor .comment-reply-link:active, body#tinymce.wp-editor #submit:active {
+  background-color: #2472a4;
+}
+
+/* line 24, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/modules/_forms.scss */
+body#tinymce.wp-editor input[type="text"],
+body#tinymce.wp-editor input[type="password"],
+body#tinymce.wp-editor input[type="datetime"],
+body#tinymce.wp-editor input[type="datetime-local"],
+body#tinymce.wp-editor input[type="date"],
+body#tinymce.wp-editor input[type="month"],
+body#tinymce.wp-editor input[type="time"],
+body#tinymce.wp-editor input[type="week"],
+body#tinymce.wp-editor input[type="number"],
+body#tinymce.wp-editor input[type="email"],
+body#tinymce.wp-editor input[type="url"],
+body#tinymce.wp-editor input[type="search"],
+body#tinymce.wp-editor input[type="tel"],
+body#tinymce.wp-editor input[type="color"],
+body#tinymce.wp-editor select,
+body#tinymce.wp-editor textarea,
+body#tinymce.wp-editor .field {
+  display: block;
+  height: 40px;
+  line-height: 1em;
+  padding: 0 12px;
+  margin-bottom: 14px;
+  font-size: 1em;
+  color: #323944;
+  border-radius: 3px;
+  vertical-align: middle;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 0;
+  width: 100%;
+  max-width: 400px;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #eaedf2;
+  -webkit-transition: background-color 0.24s ease-in-out;
+  transition: background-color 0.24s ease-in-out;
+}
+
+/* line 59, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/modules/_forms.scss */
+body#tinymce.wp-editor input[type="text"]:focus, body#tinymce.wp-editor input[type="text"]:active,
+body#tinymce.wp-editor input[type="password"]:focus,
+body#tinymce.wp-editor input[type="password"]:active,
+body#tinymce.wp-editor input[type="datetime"]:focus,
+body#tinymce.wp-editor input[type="datetime"]:active,
+body#tinymce.wp-editor input[type="datetime-local"]:focus,
+body#tinymce.wp-editor input[type="datetime-local"]:active,
+body#tinymce.wp-editor input[type="date"]:focus,
+body#tinymce.wp-editor input[type="date"]:active,
+body#tinymce.wp-editor input[type="month"]:focus,
+body#tinymce.wp-editor input[type="month"]:active,
+body#tinymce.wp-editor input[type="time"]:focus,
+body#tinymce.wp-editor input[type="time"]:active,
+body#tinymce.wp-editor input[type="week"]:focus,
+body#tinymce.wp-editor input[type="week"]:active,
+body#tinymce.wp-editor input[type="number"]:focus,
+body#tinymce.wp-editor input[type="number"]:active,
+body#tinymce.wp-editor input[type="email"]:focus,
+body#tinymce.wp-editor input[type="email"]:active,
+body#tinymce.wp-editor input[type="url"]:focus,
+body#tinymce.wp-editor input[type="url"]:active,
+body#tinymce.wp-editor input[type="search"]:focus,
+body#tinymce.wp-editor input[type="search"]:active,
+body#tinymce.wp-editor input[type="tel"]:focus,
+body#tinymce.wp-editor input[type="tel"]:active,
+body#tinymce.wp-editor input[type="color"]:focus,
+body#tinymce.wp-editor input[type="color"]:active,
+body#tinymce.wp-editor select:focus,
+body#tinymce.wp-editor select:active,
+body#tinymce.wp-editor textarea:focus,
+body#tinymce.wp-editor textarea:active,
+body#tinymce.wp-editor .field:focus,
+body#tinymce.wp-editor .field:active {
+  background-color: #f7f8fa;
+  outline: none;
+}
+
+/* line 66, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/modules/_forms.scss */
+body#tinymce.wp-editor input[type="text"].error, body#tinymce.wp-editor input[type="text"].is-invalid,
+body#tinymce.wp-editor input[type="password"].error,
+body#tinymce.wp-editor input[type="password"].is-invalid,
+body#tinymce.wp-editor input[type="datetime"].error,
+body#tinymce.wp-editor input[type="datetime"].is-invalid,
+body#tinymce.wp-editor input[type="datetime-local"].error,
+body#tinymce.wp-editor input[type="datetime-local"].is-invalid,
+body#tinymce.wp-editor input[type="date"].error,
+body#tinymce.wp-editor input[type="date"].is-invalid,
+body#tinymce.wp-editor input[type="month"].error,
+body#tinymce.wp-editor input[type="month"].is-invalid,
+body#tinymce.wp-editor input[type="time"].error,
+body#tinymce.wp-editor input[type="time"].is-invalid,
+body#tinymce.wp-editor input[type="week"].error,
+body#tinymce.wp-editor input[type="week"].is-invalid,
+body#tinymce.wp-editor input[type="number"].error,
+body#tinymce.wp-editor input[type="number"].is-invalid,
+body#tinymce.wp-editor input[type="email"].error,
+body#tinymce.wp-editor input[type="email"].is-invalid,
+body#tinymce.wp-editor input[type="url"].error,
+body#tinymce.wp-editor input[type="url"].is-invalid,
+body#tinymce.wp-editor input[type="search"].error,
+body#tinymce.wp-editor input[type="search"].is-invalid,
+body#tinymce.wp-editor input[type="tel"].error,
+body#tinymce.wp-editor input[type="tel"].is-invalid,
+body#tinymce.wp-editor input[type="color"].error,
+body#tinymce.wp-editor input[type="color"].is-invalid,
+body#tinymce.wp-editor select.error,
+body#tinymce.wp-editor select.is-invalid,
+body#tinymce.wp-editor textarea.error,
+body#tinymce.wp-editor textarea.is-invalid,
+body#tinymce.wp-editor .field.error,
+body#tinymce.wp-editor .field.is-invalid {
+  color: #fbe3e4;
+  border-color: #fbe3e4;
+  background-color: #fff;
+  background-position: 99% center;
+  background-repeat: no-repeat;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo2NDM0NDREQkYwNEIxMUUyOTI4REZGQTEzMzA2MDcyNiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo2NDM0NDREQ0YwNEIxMUUyOTI4REZGQTEzMzA2MDcyNiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjQ3ODRGRkE2RjA0QTExRTI5MjhERkZBMTMzMDYwNzI2IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjY0MzQ0NERBRjA0QjExRTI5MjhERkZBMTMzMDYwNzI2Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+U8iT5wAAAedJREFUeNqk1U9I02Ecx/HtV3aIFAc1hcRDUoGXRAq0oNLA2CrsEFmHbikZu0iQYIFGYAiegkCpLipBxPpDEBMUzB0EhSG2LhG7hMR2GviPgUTvB57Bw8P3+U23B16HPX8+e/b8nt93wezZSMCnhXETF3AcB5BDCnH8Dq98ExcGHcFn8Ah3cdDni+fxnPDv9oAnTB7CKu6VCFXtChZy56LxUjt+jfuB8toSOth9wd7xWAWhqrUjYR/FRTwWJm+iIPT/w7bQf5ljiZnBg45dtKFX6H+LU8gIY8OEV6vgTkStwXWE8BPTGDHGPqNPz2mCfSOOYkA99TvCt1bhGPL68zMcwmncMuape10jrI+q4BbHi/FLn31S9z2x5tRhTc+1W506ipM+T3oRD4X+8+qtc4SqFvL0z/Fr14S+Szjis8bz9Lvvaq8cwS/wwGfdlqfPSWqTiFlX77o13u9Ym1PBs8JAytpRoy44X9Ft9E/gvbA+rYKn8NcaaMVc8UHgBw4b9/iqUQZ6hOAJFbyDcUflmsEX4a6+wTtHGfhAIUqa1U29Zc2BytouThD8x6xuN5CtMPi2CrXLZkZf/HyZoRFCP7n+QVR4PV7uI/AjGghN7OU/r1ilnqILtfpNC+o6vIFljBKYlhb/F2AAgaBsWR5wRiIAAAAASUVORK5CYII=);
+  outline-color: #fbe3e4;
+}
+
+/* line 78, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/modules/_forms.scss */
+body#tinymce.wp-editor input[type="text"].success, body#tinymce.wp-editor input[type="text"].is-valid,
+body#tinymce.wp-editor input[type="password"].success,
+body#tinymce.wp-editor input[type="password"].is-valid,
+body#tinymce.wp-editor input[type="datetime"].success,
+body#tinymce.wp-editor input[type="datetime"].is-valid,
+body#tinymce.wp-editor input[type="datetime-local"].success,
+body#tinymce.wp-editor input[type="datetime-local"].is-valid,
+body#tinymce.wp-editor input[type="date"].success,
+body#tinymce.wp-editor input[type="date"].is-valid,
+body#tinymce.wp-editor input[type="month"].success,
+body#tinymce.wp-editor input[type="month"].is-valid,
+body#tinymce.wp-editor input[type="time"].success,
+body#tinymce.wp-editor input[type="time"].is-valid,
+body#tinymce.wp-editor input[type="week"].success,
+body#tinymce.wp-editor input[type="week"].is-valid,
+body#tinymce.wp-editor input[type="number"].success,
+body#tinymce.wp-editor input[type="number"].is-valid,
+body#tinymce.wp-editor input[type="email"].success,
+body#tinymce.wp-editor input[type="email"].is-valid,
+body#tinymce.wp-editor input[type="url"].success,
+body#tinymce.wp-editor input[type="url"].is-valid,
+body#tinymce.wp-editor input[type="search"].success,
+body#tinymce.wp-editor input[type="search"].is-valid,
+body#tinymce.wp-editor input[type="tel"].success,
+body#tinymce.wp-editor input[type="tel"].is-valid,
+body#tinymce.wp-editor input[type="color"].success,
+body#tinymce.wp-editor input[type="color"].is-valid,
+body#tinymce.wp-editor select.success,
+body#tinymce.wp-editor select.is-valid,
+body#tinymce.wp-editor textarea.success,
+body#tinymce.wp-editor textarea.is-valid,
+body#tinymce.wp-editor .field.success,
+body#tinymce.wp-editor .field.is-valid {
+  color: #e6efc2;
+  border-color: #e6efc2;
+  background-color: #fff;
+  background-position: 99% center;
+  background-repeat: no-repeat;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo2NDM0NDRERkYwNEIxMUUyOTI4REZGQTEzMzA2MDcyNiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo2NDM0NDRFMEYwNEIxMUUyOTI4REZGQTEzMzA2MDcyNiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjY0MzQ0NERERjA0QjExRTI5MjhERkZBMTMzMDYwNzI2IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjY0MzQ0NERFRjA0QjExRTI5MjhERkZBMTMzMDYwNzI2Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+7olkTQAAAfhJREFUeNqklU9oE0EUhzdroWjw0tBeWlDxkEaIp55TsCU9VKIgCrHBelA8CQ1Kr1WPbZrQ3gqtQqvGqxpQc2jBk6BIIaAGD4qNCKURpDSKiPi98gLDsJt//uBjsztvfnk7895sIPAw6/joGMThFJyAXn2+A+9gA57/TaY/eU0OeBgfhGm4DiGnsb7DAszxBz/NAdcKjMJLuNWCqagHbsscN5+L+hmH4QkMOe1L5jzFfNA2PgT34ajTuY7AGuZB0/hmh5m+gS0r8xv1zRvg+gGCHZiOwnF4DP3iB3sQkYxPd2C6CWfhB9Xwlus5+K1j4jXuaq3a+gM1H9OPcAa+7q9lPidZJqHbiIm7Wg22rsEI7FrPSzAMX/T+ADyAKSsu7Fr1KplehLvwCs5DvfBf65p+MypqRbO1FXK9utH4/QKuaqYTsG3E3INJv00Q46px3+XxanJ/Ute2/vqP4FKDza2KcdljIKdnhS0xXYULTaqmLMZFn8FFSFtvt6x70ExFCS5oUXspq2ssa7oEl1swFa+CGFdgtkHgPDyDKy02zyxNU6lXRUZb1EuHYayNNs+Yh5B0WQo+/8fpJnNTZFuzz2OpjoQ2QruSOQlMy35fEGmEGMxY9e1brxobw7TkWA1h6xfckUPb+JhGoE/Hpfvew7qUld/H9J8AAwDpw3WYrxcZ3QAAAABJRU5ErkJggg==);
+  outline-color: #e6efc2;
+}
+
+/* line 90, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/modules/_forms.scss */
+body#tinymce.wp-editor input[type="text"][disabled], body#tinymce.wp-editor input[type="text"].is-disabled,
+body#tinymce.wp-editor input[type="password"][disabled],
+body#tinymce.wp-editor input[type="password"].is-disabled,
+body#tinymce.wp-editor input[type="datetime"][disabled],
+body#tinymce.wp-editor input[type="datetime"].is-disabled,
+body#tinymce.wp-editor input[type="datetime-local"][disabled],
+body#tinymce.wp-editor input[type="datetime-local"].is-disabled,
+body#tinymce.wp-editor input[type="date"][disabled],
+body#tinymce.wp-editor input[type="date"].is-disabled,
+body#tinymce.wp-editor input[type="month"][disabled],
+body#tinymce.wp-editor input[type="month"].is-disabled,
+body#tinymce.wp-editor input[type="time"][disabled],
+body#tinymce.wp-editor input[type="time"].is-disabled,
+body#tinymce.wp-editor input[type="week"][disabled],
+body#tinymce.wp-editor input[type="week"].is-disabled,
+body#tinymce.wp-editor input[type="number"][disabled],
+body#tinymce.wp-editor input[type="number"].is-disabled,
+body#tinymce.wp-editor input[type="email"][disabled],
+body#tinymce.wp-editor input[type="email"].is-disabled,
+body#tinymce.wp-editor input[type="url"][disabled],
+body#tinymce.wp-editor input[type="url"].is-disabled,
+body#tinymce.wp-editor input[type="search"][disabled],
+body#tinymce.wp-editor input[type="search"].is-disabled,
+body#tinymce.wp-editor input[type="tel"][disabled],
+body#tinymce.wp-editor input[type="tel"].is-disabled,
+body#tinymce.wp-editor input[type="color"][disabled],
+body#tinymce.wp-editor input[type="color"].is-disabled,
+body#tinymce.wp-editor select[disabled],
+body#tinymce.wp-editor select.is-disabled,
+body#tinymce.wp-editor textarea[disabled],
+body#tinymce.wp-editor textarea.is-disabled,
+body#tinymce.wp-editor .field[disabled],
+body#tinymce.wp-editor .field.is-disabled {
+  cursor: not-allowed;
+  border-color: #cfcfcf;
+  opacity: 0.6;
+}
+
+/* line 96, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/modules/_forms.scss */
+body#tinymce.wp-editor input[type="text"][disabled]:focus, body#tinymce.wp-editor input[type="text"][disabled]:active, body#tinymce.wp-editor input[type="text"].is-disabled:focus, body#tinymce.wp-editor input[type="text"].is-disabled:active,
+body#tinymce.wp-editor input[type="password"][disabled]:focus,
+body#tinymce.wp-editor input[type="password"][disabled]:active,
+body#tinymce.wp-editor input[type="password"].is-disabled:focus,
+body#tinymce.wp-editor input[type="password"].is-disabled:active,
+body#tinymce.wp-editor input[type="datetime"][disabled]:focus,
+body#tinymce.wp-editor input[type="datetime"][disabled]:active,
+body#tinymce.wp-editor input[type="datetime"].is-disabled:focus,
+body#tinymce.wp-editor input[type="datetime"].is-disabled:active,
+body#tinymce.wp-editor input[type="datetime-local"][disabled]:focus,
+body#tinymce.wp-editor input[type="datetime-local"][disabled]:active,
+body#tinymce.wp-editor input[type="datetime-local"].is-disabled:focus,
+body#tinymce.wp-editor input[type="datetime-local"].is-disabled:active,
+body#tinymce.wp-editor input[type="date"][disabled]:focus,
+body#tinymce.wp-editor input[type="date"][disabled]:active,
+body#tinymce.wp-editor input[type="date"].is-disabled:focus,
+body#tinymce.wp-editor input[type="date"].is-disabled:active,
+body#tinymce.wp-editor input[type="month"][disabled]:focus,
+body#tinymce.wp-editor input[type="month"][disabled]:active,
+body#tinymce.wp-editor input[type="month"].is-disabled:focus,
+body#tinymce.wp-editor input[type="month"].is-disabled:active,
+body#tinymce.wp-editor input[type="time"][disabled]:focus,
+body#tinymce.wp-editor input[type="time"][disabled]:active,
+body#tinymce.wp-editor input[type="time"].is-disabled:focus,
+body#tinymce.wp-editor input[type="time"].is-disabled:active,
+body#tinymce.wp-editor input[type="week"][disabled]:focus,
+body#tinymce.wp-editor input[type="week"][disabled]:active,
+body#tinymce.wp-editor input[type="week"].is-disabled:focus,
+body#tinymce.wp-editor input[type="week"].is-disabled:active,
+body#tinymce.wp-editor input[type="number"][disabled]:focus,
+body#tinymce.wp-editor input[type="number"][disabled]:active,
+body#tinymce.wp-editor input[type="number"].is-disabled:focus,
+body#tinymce.wp-editor input[type="number"].is-disabled:active,
+body#tinymce.wp-editor input[type="email"][disabled]:focus,
+body#tinymce.wp-editor input[type="email"][disabled]:active,
+body#tinymce.wp-editor input[type="email"].is-disabled:focus,
+body#tinymce.wp-editor input[type="email"].is-disabled:active,
+body#tinymce.wp-editor input[type="url"][disabled]:focus,
+body#tinymce.wp-editor input[type="url"][disabled]:active,
+body#tinymce.wp-editor input[type="url"].is-disabled:focus,
+body#tinymce.wp-editor input[type="url"].is-disabled:active,
+body#tinymce.wp-editor input[type="search"][disabled]:focus,
+body#tinymce.wp-editor input[type="search"][disabled]:active,
+body#tinymce.wp-editor input[type="search"].is-disabled:focus,
+body#tinymce.wp-editor input[type="search"].is-disabled:active,
+body#tinymce.wp-editor input[type="tel"][disabled]:focus,
+body#tinymce.wp-editor input[type="tel"][disabled]:active,
+body#tinymce.wp-editor input[type="tel"].is-disabled:focus,
+body#tinymce.wp-editor input[type="tel"].is-disabled:active,
+body#tinymce.wp-editor input[type="color"][disabled]:focus,
+body#tinymce.wp-editor input[type="color"][disabled]:active,
+body#tinymce.wp-editor input[type="color"].is-disabled:focus,
+body#tinymce.wp-editor input[type="color"].is-disabled:active,
+body#tinymce.wp-editor select[disabled]:focus,
+body#tinymce.wp-editor select[disabled]:active,
+body#tinymce.wp-editor select.is-disabled:focus,
+body#tinymce.wp-editor select.is-disabled:active,
+body#tinymce.wp-editor textarea[disabled]:focus,
+body#tinymce.wp-editor textarea[disabled]:active,
+body#tinymce.wp-editor textarea.is-disabled:focus,
+body#tinymce.wp-editor textarea.is-disabled:active,
+body#tinymce.wp-editor .field[disabled]:focus,
+body#tinymce.wp-editor .field[disabled]:active,
+body#tinymce.wp-editor .field.is-disabled:focus,
+body#tinymce.wp-editor .field.is-disabled:active {
+  background-color: #d5edf8;
+}
+
+/* line 106, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/modules/_forms.scss */
+body#tinymce.wp-editor input[type="password"] {
+  letter-spacing: 0.3em;
+}
+
+/* line 111, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/modules/_forms.scss */
+body#tinymce.wp-editor textarea {
+  max-width: 100%;
+  min-height: 120px;
+  line-height: 1.5em;
+}
+
+/* line 118, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/modules/_forms.scss */
+body#tinymce.wp-editor select {
+  -webkit-appearance: none;
+  /* 1 */
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAHCAYAAADXhRcnAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpEOEZCMjYxMEYwNUUxMUUyOTI4REZGQTEzMzA2MDcyNiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpEOEZCMjYxMUYwNUUxMUUyOTI4REZGQTEzMzA2MDcyNiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkQ4RkIyNjBFRjA1RTExRTI5MjhERkZBMTMzMDYwNzI2IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkQ4RkIyNjBGRjA1RTExRTI5MjhERkZBMTMzMDYwNzI2Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+Vxkp9gAAAI9JREFUeNpidHFxucHAwKAOxE+AmJmBMPgLxDJAfJMFSKwD4kqoAClgA+P///8ZXF1dPaCGcBKh6QcQB+3evXs7WDMIAA2QB1I7gFgDj0aQFz2BGh+AOEwwUaDAQyBlCMR7cGjcC5KHaQQBuM3IAOiKTiBVhiTUDdRUhq4Oq2aoAelAahIQ5wM1zsCmBiDAADhYMJXVZ9u9AAAAAElFTkSuQmCC);
+  background-repeat: no-repeat;
+  background-position: 97.5% center;
+}
+
+/* line 18, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor body {
+  font-family: "Cabin", sans-serif;
+  font-size: 100%;
+  line-height: 1.5;
+  color: #323944;
+  background-color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 26, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor body.woocommerce-page {
+  background: #fff;
+}
+
+/* line 32, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor .woocommerce .woocommerce-ordering, body#tinymce.wp-editor .woocommerce-page .woocommerce-ordering {
+  float: left;
+}
+
+/* line 36, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor .woocommerce .woocommerce-ordering, body#tinymce.wp-editor .woocommerce .woocommerce-result-count {
+  margin: 1em 0 0 0;
+}
+
+/* line 84, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor .wrap {
+  width: 96%;
+  margin: 0 auto;
+}
+
+/* line 93, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
 body#tinymce.wp-editor a, body#tinymce.wp-editor a:visited {
   color: #2980b9;
   /* on hover */
   /* on click */
+  /* mobile tap color */
 }
 
-/* line 51, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/editor-style.scss */
+/* line 97, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
 body#tinymce.wp-editor a:hover, body#tinymce.wp-editor a:focus, body#tinymce.wp-editor a:visited:hover, body#tinymce.wp-editor a:visited:focus {
   color: #7fbbe3;
 }
 
-/* line 60, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/editor-style.scss */
+/* line 106, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
 body#tinymce.wp-editor a:link, body#tinymce.wp-editor a:visited:link {
+  /*
+		this highlights links on iPhones/iPads.
+		so it basically works like the :hover selector
+		for mobile devices.
+		*/
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3);
 }
 
-/* line 70, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/editor-style.scss */
+/* line 120, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
 body#tinymce.wp-editor h1, body#tinymce.wp-editor .h1, body#tinymce.wp-editor h2, body#tinymce.wp-editor .h2, body#tinymce.wp-editor h3, body#tinymce.wp-editor .h3, body#tinymce.wp-editor h4, body#tinymce.wp-editor .h4, body#tinymce.wp-editor h5, body#tinymce.wp-editor .h5 {
+  font-family: "Montserrat", sans-serif;
   text-rendering: optimizelegibility;
-  font-weight: 500;
+  font-weight: bolder;
+  /*
+	if you're going to use webfonts, be sure to check your weights
+	http://css-tricks.com/watch-your-font-weight/
+	*/
+  /* removing text decoration from all headline links */
 }
 
-/* line 73, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/editor-style.scss */
+/* line 130, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
 body#tinymce.wp-editor h1 a, body#tinymce.wp-editor .h1 a, body#tinymce.wp-editor h2 a, body#tinymce.wp-editor .h2 a, body#tinymce.wp-editor h3 a, body#tinymce.wp-editor .h3 a, body#tinymce.wp-editor h4 a, body#tinymce.wp-editor .h4 a, body#tinymce.wp-editor h5 a, body#tinymce.wp-editor .h5 a {
   text-decoration: none;
 }
 
-/* line 78, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/editor-style.scss */
+/* line 135, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
 body#tinymce.wp-editor h1, body#tinymce.wp-editor .h1 {
   font-size: 2.5em;
   line-height: 1.333em;
 }
 
-/* line 83, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/editor-style.scss */
+/* line 140, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
 body#tinymce.wp-editor h2, body#tinymce.wp-editor .h2 {
   font-size: 1.75em;
   line-height: 1.4em;
   margin-bottom: 0.375em;
 }
 
-/* line 89, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/editor-style.scss */
+/* line 146, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
 body#tinymce.wp-editor h3, body#tinymce.wp-editor .h3 {
   font-size: 1.125em;
 }
 
-/* line 93, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/editor-style.scss */
+/* line 150, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
 body#tinymce.wp-editor h4, body#tinymce.wp-editor .h4 {
   font-size: 1.1em;
   font-weight: 700;
 }
 
-/* line 98, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/editor-style.scss */
+/* line 155, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
 body#tinymce.wp-editor h5, body#tinymce.wp-editor .h5 {
   font-size: 0.846em;
   line-height: 2.09em;
@@ -794,19 +1765,1274 @@ body#tinymce.wp-editor h5, body#tinymce.wp-editor .h5 {
   letter-spacing: 2px;
 }
 
-/* line 107, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/editor-style.scss */
+/* line 166, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor .header {
+  background-color: transparent;
+  margin-top: 10vh;
+}
+
+/* line 171, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor #logo {
+  margin: 0em 0;
+}
+
+/* line 173, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor #logo img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 192, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor .nav {
+  border-bottom: 0;
+  margin: 0;
+  /* end .menu li */
+  /* highlight current page */
+  /* end current highlighters */
+}
+
+/* line 196, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor .nav li {
+  /*
+		so you really have to rethink your dropdowns for mobile.
+		you don't want to have it expand too much because the
+		screen is so small. How you manage your menu should
+		depend on the project. Here's some great info on it:
+		http://www.alistapart.com/articles/organizing-mobile/
+		*/
+}
+
+/* line 198, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor .nav li a {
+  display: block;
+  text-decoration: none;
+  padding: 0.75em;
+  /*
+			remember this is for mobile ONLY, so there's no need
+			to even declare hover styles here, you can do it in
+			the style.scss file where it's relevant. We want to
+			keep this file as small as possible!
+			*/
+}
+
+/* line 229, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor .nav li ul.sub-menu li,
+body#tinymce.wp-editor .nav li ul.children li {
+  float: none;
+}
+
+/* line 231, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor .nav li ul.sub-menu li a,
+body#tinymce.wp-editor .nav li ul.children li a {
+  padding-left: 30px;
+}
+
+/* line 251, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor .nav li:first-child a {
+  padding-left: 0;
+}
+
+/* line 276, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor #content {
+  margin-top: 0em;
+}
+
+/* line 280, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor .hentry {
+  background-color: transparent;
+  border-radius: 3px;
+  margin-bottom: 1.5em;
+  border: 1px solid rgba(240, 29, 79, 0.025);
+}
+
+/* line 286, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor .hentry header {
+  border-bottom: 1px solid #f8f9fa;
+  padding: 1.5em;
+}
+
+/* line 291, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor .hentry footer {
+  padding: 1.5em;
+  border-top: 1px solid #f8f9fa;
+}
+
+/* line 295, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor .hentry footer p {
+  margin: 0;
+}
+
+/* line 302, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor .single-title,
+body#tinymce.wp-editor .page-title,
+body#tinymce.wp-editor .entry-title {
+  margin: 0;
+}
+
+/* line 327, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor .byline {
+  color: #9fa6b4;
+  font-style: italic;
+  margin: 0;
+}
+
+/* line 336, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor .entry-content {
+  padding: 1.5em 1.5em 0;
+  /*
+			image alignment on a screen this size may be
+			a bit difficult. It's set to start aligning
+			and floating images at the next breakpoint,
+			but it's up to you. Feel free to change it up.
+			*/
+}
+
+/* line 339, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor .entry-content p {
+  margin: 0 0 1.5em;
+}
+
+/* line 364, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor .entry-content table {
+  width: 100%;
+  border: 1px solid #eaedf2;
+  margin-bottom: 1.5em;
+}
+
+/* line 369, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor .entry-content table caption {
+  margin: 0 0 7px;
+  font-size: 0.75em;
+  color: #9fa6b4;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* line 378, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor .entry-content tr {
+  border-bottom: 1px solid #eaedf2;
+}
+
+/* line 381, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor .entry-content tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+/* line 386, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor .entry-content td {
+  padding: 7px;
+  border-right: 1px solid #eaedf2;
+}
+
+/* line 390, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor .entry-content td:last-child {
+  border-right: 0;
+}
+
+/* line 395, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor .entry-content th {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #eaedf2;
+  border-right: 1px solid #eaedf2;
+}
+
+/* line 400, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor .entry-content th:last-child {
+  border-right: 0;
+}
+
+/* line 405, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor .entry-content blockquote {
+  margin: 0 0 1.5em 0.75em;
+  padding: 0 0 0 0.75em;
+  border-left: 3px solid #2980b9;
+  font-style: italic;
+  color: #9fa6b4;
+}
+
+/* line 420, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor .entry-content dd {
+  margin-left: 0;
+  font-size: 0.9em;
+  color: #787878;
+  margin-bottom: 1.5em;
+}
+
+/* line 427, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor .entry-content img {
+  margin: 0 0 1.5em 0;
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 443, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor .entry-content .size-auto,
+body#tinymce.wp-editor .entry-content .size-full,
+body#tinymce.wp-editor .entry-content .size-large,
+body#tinymce.wp-editor .entry-content .size-medium,
+body#tinymce.wp-editor .entry-content .size-thumbnail {
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 452, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor .entry-content pre {
+  background: #323944;
+  color: #f8f9fa;
+  font-size: 0.9em;
+  padding: 1.5em;
+  margin: 0 0 1.5em;
+  border-radius: 3px;
+}
+
+/* line 462, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor .wp-caption {
+  max-width: 100%;
+  background: #eee;
+  padding: 5px;
+  /* images inside wp-caption */
+}
+
+/* line 468, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor .wp-caption img {
+  max-width: 100%;
+  margin-bottom: 0;
+  width: 100%;
+}
+
+/* line 474, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor .wp-caption p.wp-caption-text {
+  font-size: 0.85em;
+  margin: 4px 0 7px;
+  text-align: center;
+}
+
+/* line 481, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor .video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+/* line 487, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor .video-container iframe,
+body#tinymce.wp-editor .video-container object,
+body#tinymce.wp-editor .video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 498, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor .jp-carousel-info {
+  display: none;
+}
+
+/* line 502, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor .gallery-columns-3 dl.gallery-item {
+  width: 33.3333%;
+}
+
+/* line 507, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor dl.gallery-item {
+  float: left;
+  padding: 0em;
+}
+
+/* line 512, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor .gallery * {
+  line-height: 0em;
+}
+
+/* line 517, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor .gallery {
+  line-height: 0em;
+  margin: 0;
+}
+
+/* line 522, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor .gallery dl {
+  margin: 0;
+}
+
+/* line 527, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor .gallery dl img {
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+/* line 539, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor .gallery dt {
+  margin: 0;
+}
+
+/* line 542, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor .gallery dd {
+  margin: 0;
+}
+
+/* line 556, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor .tags {
+  margin: 0;
+}
+
+/* line 562, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor .resume dd {
+  display: none;
+}
+
+/* line 565, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor .printresume {
+  background-color: white;
+}
+
+/* line 570, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor .resume p {
+  margin: 0 !important;
+}
+
+/* line 573, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor .resume img {
+  margin-bottom: 0 !important;
+}
+
+/* line 576, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor .resume thead {
+  display: none;
+}
+
+/* line 579, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor .resume td {
+  vertical-align: top;
+}
+
+/* line 582, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor .resume table {
+  background-color: white;
+  color: black;
+  margin: 0 !important;
+}
+
+/* line 589, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor .resume table, body#tinymce.wp-editor .resume td, body#tinymce.wp-editor .resume tr {
+  border: 0 !important;
+  height: unset !important;
+}
+
+/* line 594, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor .resume table tr td:first-child {
+  padding-left: 1em;
+}
+
+/* line 597, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor tr td:last-child {
+  /* styles */
+}
+
+/* line 604, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor .resume td a {
+  color: black;
+}
+
+/* line 607, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor td:empty {
+  display: none;
+}
+
+/* line 611, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor .resume table h1 {
+  margin: 0;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 17, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/editor-style.scss */
+  body#tinymce.wp-editor {
+    /* Force table to not be like tables anymore */
+  }
+  /* line 617, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+  body#tinymce.wp-editor .resume {
+    /* Hide table headers (but not display: none;, for accessibility) */
+  }
+  /* line 618, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+  body#tinymce.wp-editor .resume table, body#tinymce.wp-editor .resume thead, body#tinymce.wp-editor .resume tbody, body#tinymce.wp-editor .resume th, body#tinymce.wp-editor .resume td, body#tinymce.wp-editor .resume tr {
+    display: block;
+    text-align: left !important;
+    margin: 0 !important;
+    border-width: 0;
+  }
+  /* line 626, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+  body#tinymce.wp-editor .resume thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  /* line 631, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+  body#tinymce.wp-editor .resume .credits tr:nth-of-type(even) {
+    background: #f8f9fa;
+  }
+  /* line 635, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+  body#tinymce.wp-editor .resume td {
+    /* Behave  like a "row" */
+    border: none;
+    position: relative;
+    padding: 0 1em 0 1em !important;
+    width: 100% !important;
+  }
+  /* line 642, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+  body#tinymce.wp-editor .resume td * {
+    text-align: left !important;
+  }
+  /* line 646, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+  body#tinymce.wp-editor .resume td:before {
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 6px;
+    left: 6px;
+    width: 100%;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+}
+
+/* line 673, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor .pagination,
+body#tinymce.wp-editor .wp-prev-next {
+  margin: 1.5em 0;
+}
+
+/* line 677, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor .pagination {
+  text-align: center;
+}
+
+/* line 680, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor .pagination ul {
+  display: inline-block;
+  background-color: #fff;
+  white-space: nowrap;
+  padding: 0;
+  clear: both;
+  border-radius: 3px;
+}
+
+/* line 689, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor .pagination li {
+  padding: 0;
+  margin: 0;
+  float: left;
+  display: inline;
+  overflow: hidden;
+  border-right: 1px solid #eaedf2;
+}
+
+/* line 698, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor .pagination a, body#tinymce.wp-editor .pagination span {
+  margin: 0;
+  text-decoration: none;
+  padding: 0;
+  line-height: 1em;
+  font-size: 1em;
+  font-weight: normal;
+  padding: 0.75em;
+  min-width: 1em;
+  display: block;
+  color: #2980b9;
+}
+
+/* line 710, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor .pagination a:hover, body#tinymce.wp-editor .pagination a:focus, body#tinymce.wp-editor .pagination span:hover, body#tinymce.wp-editor .pagination span:focus {
+  background-color: #2980b9;
+  color: #fff;
+}
+
+/* line 716, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor .pagination .current {
+  cursor: default;
+  color: #323944;
+}
+
+/* line 720, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor .pagination .current:hover, body#tinymce.wp-editor .pagination .current:focus {
+  background-color: #fff;
+  color: #323944;
+}
+
+/* line 733, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor .wp-prev-next .prev-link {
+  float: left;
+}
+
+/* line 737, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor .wp-prev-next .next-link {
+  float: right;
+}
+
+/* line 748, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor #comments-title {
+  padding: 0.75em;
+  margin: 0;
+  border-top: 1px solid #f8f9fa;
+  /* number of comments span */
+}
+
+/* line 768, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor .commentlist {
+  margin: 0;
+  list-style-type: none;
+}
+
+/* line 773, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor .comment {
+  position: relative;
+  clear: both;
+  overflow: hidden;
+  padding: 1.5em;
+  border-bottom: 1px solid #f8f9fa;
+  /* vcard */
+  /* end .commentlist .vcard */
+  /* end children */
+  /* general comment classes */
+}
+
+/* line 780, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor .comment .comment-author {
+  padding: 7px;
+  border: 0;
+}
+
+/* line 786, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor .comment .vcard {
+  margin-left: 50px;
+}
+
+/* line 789, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor .comment .vcard cite.fn {
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* line 797, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor .comment .vcard time {
+  display: block;
+  font-size: 0.9em;
+  font-style: italic;
+}
+
+/* line 802, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor .comment .vcard time a {
+  color: #9fa6b4;
+  text-decoration: none;
+}
+
+/* line 806, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor .comment .vcard time a:hover {
+  text-decoration: underline;
+}
+
+/* line 816, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor .comment .vcard .avatar {
+  position: absolute;
+  left: 16px;
+  border-radius: 50%;
+}
+
+/* line 824, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor .comment:last-child {
+  margin-bottom: 0;
+}
+
+/* line 828, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor .comment .children {
+  margin: 0;
+  /* variations */
+  /* change number for different depth */
+}
+
+/* line 846, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor .comment[class*=depth-] {
+  margin-top: 1.1em;
+}
+
+/* line 850, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor .comment.depth-1 {
+  margin-left: 0;
+  margin-top: 0;
+}
+
+/* line 855, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor .comment:not(.depth-1) {
+  margin-top: 0;
+  margin-left: 7px;
+  padding: 7px;
+}
+
+/* line 868, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor .comment.odd {
+  background-color: #fff;
+}
+
+/* line 871, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor .comment.even {
+  background: #f8f9fa;
+}
+
+/* line 905, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor .comment_content p {
+  margin: 0.7335em 0 1.5em;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+/* line 914, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor .comment-reply-link {
+  font-size: 0.9em;
+  float: right;
+}
+
+/* line 926, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor .comment-edit-link {
+  font-style: italic;
+  margin: 0 7px;
+  text-decoration: none;
+  font-size: 0.9em;
+}
+
+/* line 939, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor .comment-respond {
+  padding: 1.5em;
+  border-top: 1px solid #f8f9fa;
+}
+
+/* line 945, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor #reply-title {
+  margin: 0;
+}
+
+/* line 949, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor .logged-in-as {
+  color: #9fa6b4;
+  font-style: italic;
+  margin: 0;
+}
+
+/* line 954, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor .logged-in-as a {
+  color: #323944;
+}
+
+/* line 959, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor .comment-form-comment {
+  margin: 1.5em 0 0.75em;
+}
+
+/* line 963, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor .form-allowed-tags {
+  padding: 1.5em;
+  background-color: #f8f9fa;
+  font-size: 0.9em;
+}
+
+/* line 970, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor #submit {
+  float: right;
+  font-size: 1em;
+}
+
+/* line 977, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor #comment-form-title {
+  margin: 0 0 1.1em;
+}
+
+/* line 990, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor #allowed_tags {
+  margin: 1.5em 10px 0.7335em 0;
+}
+
+/* line 995, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor .nocomments {
+  margin: 0 20px 1.1em;
+}
+
+/* line 1011, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor .widget ul li {
+  /* deep nesting */
+}
+
+/* line 1028, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor .no-widgets {
+  background-color: #fff;
+  padding: 1.5em;
+  text-align: center;
+  border: 1px solid rgba(240, 29, 79, 0.025);
+  border-radius: 2px;
+  margin-bottom: 1.5em;
+}
+
+/* line 1041, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor .footer {
+  clear: both;
+  color: #323944;
+}
+
+/* line 1071, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor .video-container, body#tinymce.wp-editor .embed-youtube, body#tinymce.wp-editor .fb-video {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+/* line 1082, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+body#tinymce.wp-editor .video-container iframe,
+body#tinymce.wp-editor .video-container object,
+body#tinymce.wp-editor .video-container embed,
+body#tinymce.wp-editor .embed-youtube iframe,
+body#tinymce.wp-editor .embed-youtube object,
+body#tinymce.wp-editor .embed-youtube embed,
+body#tinymce.wp-editor .fb-video iframe,
+body#tinymce.wp-editor .fb-video object,
+body#tinymce.wp-editor .fb-video embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (min-width: 481px) {
+  /* line 17, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/editor-style.scss */
+  body#tinymce.wp-editor {
+    /******************************************************************
+Site Name:
+Author:
+
+Stylesheet: 481px and Up Stylesheet
+
+This stylesheet is loaded for larger devices. It's set to
+481px because at 480px it would load on a landscaped iPhone.
+This isn't ideal because then you would be loading all those
+extra styles on that same mobile connection.
+
+A word of warning. This size COULD be a larger mobile device,
+so you still want to keep it pretty light and simply expand
+upon your base.scss styles.
+
+******************************************************************/
+    /*
+IMPORTANT NOTE ABOUT SASS 3.3 & UP
+You can't use @extend within media queries
+anymore, so just be aware that if you drop
+them in here, they won't work.
+*/
+    /*********************
+NAVIGATION STYLES
+*********************/
+    /* .menu is clearfixed inside mixins.scss */
+    /* end .menu */
+    /*********************
+POSTS & CONTENT STYLES
+*********************/
+    /* entry content */
+    /* end .entry-content */
+    /*********************
+FOOTER STYLES
+*********************/
+    /*
+check your menus here. do they look good?
+do they need tweaking?
+*/
+    /* end .footer-links */
+  }
+  /* line 33, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_481up.scss */
+  body#tinymce.wp-editor .menu {
+    /* end .menu ul */
+  }
+  /* line 34, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_481up.scss */
+  body#tinymce.wp-editor .menu ul {
+    /* end .menu ul li */
+    /* highlight current page */
+    /* end current highlighters */
+  }
+  /* line 35, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_481up.scss */
+  body#tinymce.wp-editor .menu ul li {
+    /*
+				plan your menus and drop-downs wisely.
+				*/
+  }
+  /* line 36, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_481up.scss */
+  body#tinymce.wp-editor .menu ul li a {
+    /*
+					you can use hover styles here even though this size
+					has the possibility of being a mobile device.
+					*/
+  }
+  /* line 81, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_481up.scss */
+  body#tinymce.wp-editor .entry-content {
+    /* at this larger size, we can start to align images */
+  }
+  /* line 85, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_481up.scss */
+  body#tinymce.wp-editor .entry-content .alignleft, body#tinymce.wp-editor .entry-content img.alignleft {
+    margin-right: 1.5em;
+    display: inline;
+    float: left;
+  }
+  /* line 90, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_481up.scss */
+  body#tinymce.wp-editor .entry-content .alignright, body#tinymce.wp-editor .entry-content img.alignright {
+    margin-left: 1.5em;
+    display: inline;
+    float: right;
+  }
+  /* line 95, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_481up.scss */
+  body#tinymce.wp-editor .entry-content .aligncenter, body#tinymce.wp-editor .entry-content img.aligncenter {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    clear: both;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  /* line 17, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/editor-style.scss */
+  body#tinymce.wp-editor {
+    /******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Tablet & Small Desktop Stylesheet
+
+Here's where you can start getting into the good stuff.
+This size will work on iPads, other tablets, and desktops.
+So you can start working with more styles, background images,
+and other resources. You'll also notice the grid starts to
+come into play. Have fun!
+
+******************************************************************/
+    /*********************
+GENERAL STYLES
+*********************/
+    /*********************
+LAYOUT & GRID STYLES
+*********************/
+    /*********************
+HEADER STYLES
+*********************/
+    /*********************
+NAVIGATION STYLES
+*********************/
+    /* end .nav */
+    /*********************
+SIDEBARS & ASIDES
+*********************/
+    /* links widget */
+    /* meta widget */
+    /* pages widget */
+    /* recent-posts widget */
+    /* archives widget */
+    /* tag-cloud widget */
+    /* calendar widget */
+    /* category widget */
+    /* recent-comments widget */
+    /* search widget */
+    /* text widget */
+    /*********************
+FOOTER STYLES
+*********************/
+    /*
+you'll probably need to do quite a bit
+of overriding here if you styled them for
+mobile. Make sure to double check these!
+*/
+    /* end .footer-links */
+  }
+  /* line 26, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_768up.scss */
+  body#tinymce.wp-editor .wrap {
+    width: 760px;
+  }
+  /* line 42, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_768up.scss */
+  body#tinymce.wp-editor .nav {
+    border: 0;
+    /* end .menu ul li */
+    /* highlight current page */
+    /* end current highlighters */
+  }
+  /* line 44, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_768up.scss */
+  body#tinymce.wp-editor .nav ul {
+    background: transparent;
+    border: 0px solid rgba(240, 29, 79, 0.025);
+    margin: 0;
+  }
+  /* line 49, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_768up.scss */
+  body#tinymce.wp-editor .nav li {
+    float: left;
+    position: relative;
+    /*
+		plan your menus and drop-downs wisely.
+		*/
+    /* showing sub-menus */
+  }
+  /* line 53, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_768up.scss */
+  body#tinymce.wp-editor .nav li a {
+    border-bottom: 0;
+    /*
+			you can use hover styles here even though this size
+			has the possibility of being a mobile device.
+			*/
+  }
+  /* line 70, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_768up.scss */
+  body#tinymce.wp-editor .nav li ul.sub-menu,
+  body#tinymce.wp-editor .nav li ul.children {
+    margin-top: 0;
+    border: 0px solid #ccc;
+    border-top: 0;
+    position: absolute;
+    visibility: hidden;
+    z-index: 8999;
+    /* highlight sub-menu current page */
+  }
+  /* line 79, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_768up.scss */
+  body#tinymce.wp-editor .nav li ul.sub-menu li,
+  body#tinymce.wp-editor .nav li ul.children li {
+    float: none;
+    /*
+				if you need to go deeper, go nuts
+				just remember deeper menus suck
+				for usability. k, bai.
+				*/
+  }
+  /* line 81, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_768up.scss */
+  body#tinymce.wp-editor .nav li ul.sub-menu li a,
+  body#tinymce.wp-editor .nav li ul.children li a {
+    padding-left: 10px;
+    border-right: 0;
+    display: block;
+    width: 180px;
+    border-bottom: 1px solid #ccc;
+  }
+  /* line 98, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_768up.scss */
+  body#tinymce.wp-editor .nav li ul.sub-menu li:last-child a,
+  body#tinymce.wp-editor .nav li ul.children li:last-child a {
+    border-bottom: 0;
+  }
+  /* line 108, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_768up.scss */
+  body#tinymce.wp-editor .nav li ul.sub-menu li ul,
+  body#tinymce.wp-editor .nav li ul.children li ul {
+    top: 0;
+    left: 100%;
+  }
+  /* line 123, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_768up.scss */
+  body#tinymce.wp-editor .nav li:hover > ul {
+    top: auto;
+    visibility: visible;
+  }
+  /* line 143, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_768up.scss */
+  body#tinymce.wp-editor .sidebar {
+    margin-top: 2.2em;
+  }
+  /* line 147, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_768up.scss */
+  body#tinymce.wp-editor .widgettitle {
+    border-bottom: 2px solid #444;
+    margin-bottom: 0.75em;
+  }
+  /* line 152, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_768up.scss */
+  body#tinymce.wp-editor .widget {
+    padding: 0 10px;
+    margin: 2.2em 0;
+  }
+  /* line 157, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_768up.scss */
+  body#tinymce.wp-editor .widget ul li {
+    margin-bottom: 0.75em;
+    /* deep nesting */
+  }
+  /* line 165, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_768up.scss */
+  body#tinymce.wp-editor .widget ul li ul {
+    margin-top: 0.75em;
+    padding-left: 1em;
+  }
+  /* line 260, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_768up.scss */
+  body#tinymce.wp-editor p .size-auto,
+  body#tinymce.wp-editor p .size-full,
+  body#tinymce.wp-editor p .size-large,
+  body#tinymce.wp-editor p .size-medium,
+  body#tinymce.wp-editor p .size-thumbnail {
+    max-width: 50% !important;
+    height: auto;
+  }
+  /* line 280, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_768up.scss */
+  body#tinymce.wp-editor .footer-links ul li {
+    /*
+			be careful with the depth of your menus.
+			it's very rare to have multi-depth menus in
+			the footer.
+			*/
+  }
+}
+
+@media only screen and (min-width: 1030px) {
+  /* line 17, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/editor-style.scss */
+  body#tinymce.wp-editor {
+    /******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Desktop Stylsheet
+
+This is the desktop size. It's larger than an iPad so it will only
+be seen on the Desktop.
+
+******************************************************************/
+  }
+}
+
+@media only screen and (min-width: 1240px) {
+  /* line 17, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/editor-style.scss */
+  body#tinymce.wp-editor {
+    /******************************************************************
+Site Name: 
+Author: 
+
+Stylesheet: Super Large Monitor Stylesheet
+
+You can add some advanced styles here if you like. This kicks in
+on larger screens.
+
+******************************************************************/
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  /* line 17, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/editor-style.scss */
+  body#tinymce.wp-editor {
+    /******************************************************************
+Site Name: 
+Author: 
+
+Stylesheet: Retina Screens & Devices Stylesheet
+
+When handling retina screens you need to make adjustments, especially
+if you're not using font icons. Here you can add them in one neat
+place.
+
+******************************************************************/
+    /* 
+
+EXAMPLE 
+Let's say you have an image and you need to make sure it looks ok
+on retina screens. Let's say we have an icon which dimension are
+24px x 24px. In your regular stylesheets, it would look something
+like this:
+
+.icon {
+	width: 24px;
+	height: 24px;
+	background: url(img/test.png) no-repeat;
+}
+
+For retina screens, we have to make some adjustments, so that image
+doesn't look blurry. So, taking into account the image above and the
+dimensions, this is what we would put in our retina stylesheet:
+
+.icon {
+	background: url(img/test@2x.png) no-repeat;
+	background-size: 24px 24px;
+}
+
+So, you would create the same icon, but at double the resolution, meaning 
+it would be 48px x 48px. You'd name it the same, but with a @2x at the end
+(this is pretty standard practice). Set the background image so it matches
+the original dimensions and you are good to go. 
+
+*/
+  }
+}
+
+@media print {
+  /* line 17, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/editor-style.scss */
+  body#tinymce.wp-editor {
+    /******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Print Stylesheet
+
+This is the print stylesheet. There's probably not a lot
+of reasons to edit this stylesheet. If you want to
+though, go for it.
+
+******************************************************************/
+  }
+  /* line 12, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/partials/_print.scss */
+  body#tinymce.wp-editor body {
+    font-size: 1.75em;
+  }
+  /* line 15, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/partials/_print.scss */
+  body#tinymce.wp-editor h3 {
+    margin: 0em;
+  }
+  /* line 18, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/partials/_print.scss */
+  body#tinymce.wp-editor div#container {
+    margin-top: 0em;
+  }
+  /* line 21, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/partials/_print.scss */
+  body#tinymce.wp-editor .entry-content td, body#tinymce.wp-editor .article-footer td {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  /* line 26, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/partials/_print.scss */
+  body#tinymce.wp-editor .entry-content, body#tinymce.wp-editor .article-footer {
+    padding: 0em 1.5em .5em 0em;
+  }
+  /* line 30, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/partials/_print.scss */
+  body#tinymce.wp-editor * {
+    background: transparent !important;
+    color: black !important;
+    text-shadow: none !important;
+    border: 0px !important;
+    -webkit-filter: none !important;
+            filter: none !important;
+    -ms-filter: none !important;
+  }
+  /* line 43, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/partials/_print.scss */
+  body#tinymce.wp-editor .ir a:after,
+  body#tinymce.wp-editor a[href^="javascript:"]:after,
+  body#tinymce.wp-editor a[href^="#"]:after {
+    content: "";
+  }
+  /* line 49, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/partials/_print.scss */
+  body#tinymce.wp-editor pre, body#tinymce.wp-editor blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  /* line 54, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/partials/_print.scss */
+  body#tinymce.wp-editor thead {
+    display: table-header-group;
+  }
+  /* line 58, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/partials/_print.scss */
+  body#tinymce.wp-editor tr, body#tinymce.wp-editor img {
+    page-break-inside: avoid;
+  }
+  /* line 62, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/partials/_print.scss */
+  body#tinymce.wp-editor img {
+    max-width: 100% !important;
+  }
+  @page {
+    /* line 17, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/editor-style.scss */
+    body#tinymce.wp-editor {
+      margin: 0.5cm;
+    }
+  }
+  /* line 70, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/partials/_print.scss */
+  body#tinymce.wp-editor p, body#tinymce.wp-editor h2, body#tinymce.wp-editor h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  /* line 75, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/partials/_print.scss */
+  body#tinymce.wp-editor h2,
+  body#tinymce.wp-editor h3 {
+    page-break-after: avoid;
+  }
+  /* line 79, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/partials/_print.scss */
+  body#tinymce.wp-editor .noprint, body#tinymce.wp-editor header, body#tinymce.wp-editor footer {
+    display: none;
+  }
+  /* line 82, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/partials/_print.scss */
+  body#tinymce.wp-editor .resume table {
+    font-size: 50%;
+  }
+  /* line 86, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/partials/_print.scss */
+  body#tinymce.wp-editor .sidebar,
+  body#tinymce.wp-editor .page-navigation,
+  body#tinymce.wp-editor .wp-prev-next,
+  body#tinymce.wp-editor .respond-form,
+  body#tinymce.wp-editor nav {
+    display: none;
+  }
+}
+
+/* line 35, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/editor-style.scss */
+body#tinymce.wp-editor a, body#tinymce.wp-editor a:visited {
+  color: #2980b9;
+  /* on hover */
+  /* on click */
+}
+
+/* line 39, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/editor-style.scss */
+body#tinymce.wp-editor a:hover, body#tinymce.wp-editor a:focus, body#tinymce.wp-editor a:visited:hover, body#tinymce.wp-editor a:visited:focus {
+  color: #7fbbe3;
+}
+
+/* line 48, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/editor-style.scss */
+body#tinymce.wp-editor a:link, body#tinymce.wp-editor a:visited:link {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3);
+}
+
+/* line 58, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/editor-style.scss */
+body#tinymce.wp-editor h1, body#tinymce.wp-editor .h1, body#tinymce.wp-editor h2, body#tinymce.wp-editor .h2, body#tinymce.wp-editor h3, body#tinymce.wp-editor .h3, body#tinymce.wp-editor h4, body#tinymce.wp-editor .h4, body#tinymce.wp-editor h5, body#tinymce.wp-editor .h5 {
+  text-rendering: optimizelegibility;
+  font-weight: 500;
+}
+
+/* line 61, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/editor-style.scss */
+body#tinymce.wp-editor h1 a, body#tinymce.wp-editor .h1 a, body#tinymce.wp-editor h2 a, body#tinymce.wp-editor .h2 a, body#tinymce.wp-editor h3 a, body#tinymce.wp-editor .h3 a, body#tinymce.wp-editor h4 a, body#tinymce.wp-editor .h4 a, body#tinymce.wp-editor h5 a, body#tinymce.wp-editor .h5 a {
+  text-decoration: none;
+}
+
+/* line 66, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/editor-style.scss */
+body#tinymce.wp-editor h1, body#tinymce.wp-editor .h1 {
+  font-size: 2.5em;
+  line-height: 1.333em;
+}
+
+/* line 71, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/editor-style.scss */
+body#tinymce.wp-editor h2, body#tinymce.wp-editor .h2 {
+  font-size: 1.75em;
+  line-height: 1.4em;
+  margin-bottom: 0.375em;
+}
+
+/* line 77, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/editor-style.scss */
+body#tinymce.wp-editor h3, body#tinymce.wp-editor .h3 {
+  font-size: 1.125em;
+}
+
+/* line 81, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/editor-style.scss */
+body#tinymce.wp-editor h4, body#tinymce.wp-editor .h4 {
+  font-size: 1.1em;
+  font-weight: 700;
+}
+
+/* line 86, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/editor-style.scss */
+body#tinymce.wp-editor h5, body#tinymce.wp-editor .h5 {
+  font-size: 0.846em;
+  line-height: 2.09em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* line 95, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/editor-style.scss */
 body#tinymce.wp-editor p {
   margin: 0 0 1.5em;
 }
 
-/* line 111, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/editor-style.scss */
+/* line 99, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/editor-style.scss */
 body#tinymce.wp-editor table {
   width: 100%;
   border: 1px solid #eaedf2;
   margin-bottom: 1.5em;
 }
 
-/* line 116, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/editor-style.scss */
+/* line 103, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/editor-style.scss */
+body#tinymce.wp-editor table tr, body#tinymce.wp-editor table td {
+  height: unset !important;
+}
+
+/* line 105, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/editor-style.scss */
 body#tinymce.wp-editor table caption {
   margin: 0 0 7px;
   font-size: 0.75em;
@@ -815,40 +3041,40 @@ body#tinymce.wp-editor table caption {
   letter-spacing: 1px;
 }
 
-/* line 125, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/editor-style.scss */
+/* line 114, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/editor-style.scss */
 body#tinymce.wp-editor tr {
   border-bottom: 1px solid #eaedf2;
 }
 
-/* line 127, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/editor-style.scss */
+/* line 116, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/editor-style.scss */
 body#tinymce.wp-editor tr:nth-child(even) {
   background-color: #f8f9fa;
 }
 
-/* line 132, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/editor-style.scss */
+/* line 121, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/editor-style.scss */
 body#tinymce.wp-editor td {
   padding: 7px;
   border-right: 1px solid #eaedf2;
 }
 
-/* line 136, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/editor-style.scss */
+/* line 125, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/editor-style.scss */
 body#tinymce.wp-editor td:last-child {
   border-right: 0;
 }
 
-/* line 141, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/editor-style.scss */
+/* line 130, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/editor-style.scss */
 body#tinymce.wp-editor th {
   background-color: #f8f9fa;
   border-bottom: 1px solid #eaedf2;
   border-right: 1px solid #eaedf2;
 }
 
-/* line 146, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/editor-style.scss */
+/* line 135, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/editor-style.scss */
 body#tinymce.wp-editor th:last-child {
   border-right: 0;
 }
 
-/* line 151, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/editor-style.scss */
+/* line 140, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/editor-style.scss */
 body#tinymce.wp-editor blockquote {
   margin: 0 0 1.5em 0.75em;
   padding: 0 0 0 0.75em;
@@ -857,7 +3083,7 @@ body#tinymce.wp-editor blockquote {
   color: #9fa6b4;
 }
 
-/* line 162, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/editor-style.scss */
+/* line 151, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/editor-style.scss */
 body#tinymce.wp-editor dd {
   margin-left: 0;
   font-size: 0.9em;
@@ -865,14 +3091,14 @@ body#tinymce.wp-editor dd {
   margin-bottom: 1.5em;
 }
 
-/* line 169, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/editor-style.scss */
+/* line 158, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/editor-style.scss */
 body#tinymce.wp-editor img {
   margin: 0 0 1.5em 0;
   max-width: 100%;
   height: auto;
 }
 
-/* line 175, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/editor-style.scss */
+/* line 164, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/editor-style.scss */
 body#tinymce.wp-editor .size-auto,
 body#tinymce.wp-editor .size-full,
 body#tinymce.wp-editor .size-large,
@@ -882,7 +3108,7 @@ body#tinymce.wp-editor .size-thumbnail {
   height: auto;
 }
 
-/* line 184, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/editor-style.scss */
+/* line 173, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/editor-style.scss */
 body#tinymce.wp-editor pre {
   background: #323944;
   color: #f8f9fa;
@@ -897,19 +3123,19 @@ body#tinymce.wp-editor pre {
   body#tinymce.wp-editor {
     /* at this larger size, we can start to align images */
   }
-  /* line 202, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/editor-style.scss */
+  /* line 191, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/editor-style.scss */
   body#tinymce.wp-editor .alignleft, body#tinymce.wp-editor img.alignleft {
     margin-right: 1.5em;
     display: inline;
     float: left;
   }
-  /* line 207, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/editor-style.scss */
+  /* line 196, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/editor-style.scss */
   body#tinymce.wp-editor .alignright, body#tinymce.wp-editor img.alignright {
     margin-left: 1.5em;
     display: inline;
     float: right;
   }
-  /* line 212, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/editor-style.scss */
+  /* line 201, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/editor-style.scss */
   body#tinymce.wp-editor .aligncenter, body#tinymce.wp-editor img.aligncenter {
     margin-right: auto;
     margin-left: auto;

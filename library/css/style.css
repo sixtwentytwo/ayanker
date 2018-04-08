@@ -1998,47 +1998,58 @@ RESUME
 /* line 589, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
 .resume table, .resume td, .resume tr {
   border: 0 !important;
+  height: unset !important;
 }
 
-/* line 593, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+/* line 594, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
 .resume table tr td:first-child {
   padding-left: 1em;
 }
 
-/* line 596, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+/* line 597, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
 tr td:last-child {
   /* styles */
 }
 
-/* line 603, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+/* line 604, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
 .resume td a {
   color: black;
 }
 
+/* line 607, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+td:empty {
+  display: none;
+}
+
+/* line 611, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+.resume table h1 {
+  margin: 0;
+}
+
 @media only screen and (max-width: 767px) {
   /* Force table to not be like tables anymore */
-  /* line 610, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+  /* line 617, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
   .resume {
     /* Hide table headers (but not display: none;, for accessibility) */
   }
-  /* line 611, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+  /* line 618, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
   .resume table, .resume thead, .resume tbody, .resume th, .resume td, .resume tr {
     display: block;
     text-align: left !important;
     margin: 0 !important;
     border-width: 0;
   }
-  /* line 619, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+  /* line 626, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
   .resume thead tr {
     position: absolute;
     top: -9999px;
     left: -9999px;
   }
-  /* line 624, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+  /* line 631, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
   .resume .credits tr:nth-of-type(even) {
     background: #f8f9fa;
   }
-  /* line 628, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+  /* line 635, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
   .resume td {
     /* Behave  like a "row" */
     border: none;
@@ -2046,11 +2057,11 @@ tr td:last-child {
     padding: 0 1em 0 1em !important;
     width: 100% !important;
   }
-  /* line 635, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+  /* line 642, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
   .resume td * {
     text-align: left !important;
   }
-  /* line 639, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+  /* line 646, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
   .resume td:before {
     /* Now like a table header */
     position: absolute;
@@ -2069,18 +2080,18 @@ END RESUME
 /******************************************************************
 PAGE NAVI STYLES
 ******************************************************************/
-/* line 666, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+/* line 673, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
 .pagination,
 .wp-prev-next {
   margin: 1.5em 0;
 }
 
-/* line 670, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+/* line 677, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
 .pagination {
   text-align: center;
 }
 
-/* line 673, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+/* line 680, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
 .pagination ul {
   display: inline-block;
   background-color: #fff;
@@ -2090,7 +2101,7 @@ PAGE NAVI STYLES
   border-radius: 3px;
 }
 
-/* line 682, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+/* line 689, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
 .pagination li {
   padding: 0;
   margin: 0;
@@ -2100,7 +2111,7 @@ PAGE NAVI STYLES
   border-right: 1px solid #eaedf2;
 }
 
-/* line 691, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+/* line 698, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
 .pagination a, .pagination span {
   margin: 0;
   text-decoration: none;
@@ -2114,19 +2125,19 @@ PAGE NAVI STYLES
   color: #2980b9;
 }
 
-/* line 703, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+/* line 710, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
 .pagination a:hover, .pagination a:focus, .pagination span:hover, .pagination span:focus {
   background-color: #2980b9;
   color: #fff;
 }
 
-/* line 709, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+/* line 716, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
 .pagination .current {
   cursor: default;
   color: #323944;
 }
 
-/* line 713, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+/* line 720, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
 .pagination .current:hover, .pagination .current:focus {
   background-color: #fff;
   color: #323944;
@@ -2134,12 +2145,12 @@ PAGE NAVI STYLES
 
 /* end .bones_page_navi */
 /* fallback previous & next links */
-/* line 726, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+/* line 733, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
 .wp-prev-next .prev-link {
   float: left;
 }
 
-/* line 730, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+/* line 737, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
 .wp-prev-next .next-link {
   float: right;
 }
@@ -2149,7 +2160,7 @@ PAGE NAVI STYLES
 COMMENT STYLES
 ******************************************************************/
 /* h3 comment title */
-/* line 741, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+/* line 748, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
 #comments-title {
   padding: 0.75em;
   margin: 0;
@@ -2157,13 +2168,13 @@ COMMENT STYLES
   /* number of comments span */
 }
 
-/* line 761, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+/* line 768, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
 .commentlist {
   margin: 0;
   list-style-type: none;
 }
 
-/* line 766, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+/* line 773, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
 .comment {
   position: relative;
   clear: both;
@@ -2176,91 +2187,91 @@ COMMENT STYLES
   /* general comment classes */
 }
 
-/* line 773, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+/* line 780, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
 .comment .comment-author {
   padding: 7px;
   border: 0;
 }
 
-/* line 779, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+/* line 786, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
 .comment .vcard {
   margin-left: 50px;
 }
 
-/* line 782, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+/* line 789, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
 .comment .vcard cite.fn {
   font-weight: 700;
   font-style: normal;
 }
 
-/* line 790, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+/* line 797, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
 .comment .vcard time {
   display: block;
   font-size: 0.9em;
   font-style: italic;
 }
 
-/* line 795, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+/* line 802, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
 .comment .vcard time a {
   color: #9fa6b4;
   text-decoration: none;
 }
 
-/* line 799, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+/* line 806, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
 .comment .vcard time a:hover {
   text-decoration: underline;
 }
 
-/* line 809, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+/* line 816, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
 .comment .vcard .avatar {
   position: absolute;
   left: 16px;
   border-radius: 50%;
 }
 
-/* line 817, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+/* line 824, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
 .comment:last-child {
   margin-bottom: 0;
 }
 
-/* line 821, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+/* line 828, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
 .comment .children {
   margin: 0;
   /* variations */
   /* change number for different depth */
 }
 
-/* line 839, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+/* line 846, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
 .comment[class*=depth-] {
   margin-top: 1.1em;
 }
 
-/* line 843, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+/* line 850, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
 .comment.depth-1 {
   margin-left: 0;
   margin-top: 0;
 }
 
-/* line 848, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+/* line 855, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
 .comment:not(.depth-1) {
   margin-top: 0;
   margin-left: 7px;
   padding: 7px;
 }
 
-/* line 861, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+/* line 868, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
 .comment.odd {
   background-color: #fff;
 }
 
-/* line 864, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+/* line 871, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
 .comment.even {
   background: #f8f9fa;
 }
 
 /* comment meta */
 /* comment content */
-/* line 898, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+/* line 905, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
 .comment_content p {
   margin: 0.7335em 0 1.5em;
   font-size: 1em;
@@ -2269,7 +2280,7 @@ COMMENT STYLES
 
 /* end .commentlist .comment_content */
 /* comment reply link */
-/* line 907, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+/* line 914, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
 .comment-reply-link {
   font-size: 0.9em;
   float: right;
@@ -2277,7 +2288,7 @@ COMMENT STYLES
 
 /* end .commentlist .comment-reply-link */
 /* edit comment link */
-/* line 919, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+/* line 926, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
 .comment-edit-link {
   font-style: italic;
   margin: 0 7px;
@@ -2288,35 +2299,35 @@ COMMENT STYLES
 /******************************************************************
 COMMENT FORM STYLES
 ******************************************************************/
-/* line 932, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+/* line 939, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
 .comment-respond {
   padding: 1.5em;
   border-top: 1px solid #f8f9fa;
 }
 
-/* line 938, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+/* line 945, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
 #reply-title {
   margin: 0;
 }
 
-/* line 942, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+/* line 949, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
 .logged-in-as {
   color: #9fa6b4;
   font-style: italic;
   margin: 0;
 }
 
-/* line 947, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+/* line 954, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
 .logged-in-as a {
   color: #323944;
 }
 
-/* line 952, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+/* line 959, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
 .comment-form-comment {
   margin: 1.5em 0 0.75em;
 }
 
-/* line 956, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+/* line 963, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
 .form-allowed-tags {
   padding: 1.5em;
   background-color: #f8f9fa;
@@ -2324,14 +2335,14 @@ COMMENT FORM STYLES
 }
 
 /* comment submit button */
-/* line 963, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+/* line 970, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
 #submit {
   float: right;
   font-size: 1em;
 }
 
 /* comment form title */
-/* line 970, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+/* line 977, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
 #comment-form-title {
   margin: 0 0 1.1em;
 }
@@ -2339,13 +2350,13 @@ COMMENT FORM STYLES
 /* cancel comment reply link */
 /* logged in comments */
 /* allowed tags */
-/* line 983, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+/* line 990, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
 #allowed_tags {
   margin: 1.5em 10px 0.7335em 0;
 }
 
 /* no comments */
-/* line 988, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+/* line 995, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
 .nocomments {
   margin: 0 20px 1.1em;
 }
@@ -2353,12 +2364,12 @@ COMMENT FORM STYLES
 /*********************
 SIDEBARS & ASIDES
 *********************/
-/* line 1004, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+/* line 1011, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
 .widget ul li {
   /* deep nesting */
 }
 
-/* line 1021, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+/* line 1028, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
 .no-widgets {
   background-color: #fff;
   padding: 1.5em;
@@ -2371,7 +2382,7 @@ SIDEBARS & ASIDES
 /*********************
 FOOTER STYLES
 *********************/
-/* line 1034, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+/* line 1041, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
 .footer {
   clear: both;
   color: #323944;
@@ -2390,7 +2401,7 @@ FOOTER STYLES
 /****
 VIDEOS
 ***/
-/* line 1064, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+/* line 1071, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
 .video-container, .embed-youtube, .fb-video {
   position: relative;
   padding-bottom: 56.25%;
@@ -2399,7 +2410,7 @@ VIDEOS
   overflow: hidden;
 }
 
-/* line 1075, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
+/* line 1082, Users/aaron/Desktop/WEBSITES/622tularosa.com/sixtwentytwo/library/scss/breakpoints/_base.scss */
 .video-container iframe,
 .video-container object,
 .video-container embed,

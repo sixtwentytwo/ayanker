@@ -587,7 +587,12 @@ function add_the_table_plugin( $plugins ) {
     $plugins['table'] = content_url() . '/themes/'.get_template().'/library/tinymceplugins/table/plugin.min.js';
     return $plugins;
 }
+function add_the_contextmenu_plugin( $plugins ) {
+    $plugins['contextmenu'] = content_url() . '/themes/'.get_template().'/library/tinymceplugins/contextmenu/plugin.min.js';
+    return $plugins;
+}
 add_filter( 'mce_external_plugins', 'add_the_table_plugin' );
+add_filter( 'mce_external_plugins', 'add_the_contextmenu_plugin' );
 
 add_filter( 'auto_update_core', '__return_true' );
 
